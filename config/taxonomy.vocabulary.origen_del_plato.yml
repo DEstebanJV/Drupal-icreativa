@@ -1,0 +1,9 @@
+uuid: 4170a2d8-e1da-4da8-99a0-3d9367350266
+langcode: es
+status: true
+dependencies: {  }
+name: 'Origen del plato'
+vid: origen_del_plato
+description: 'Menciona el origen proveniente del plato'
+weight: 0
+new_revision: false

@@ -1,0 +1,10 @@
+uuid: 4a1b1e9d-9b12-49bf-bd3d-88189701720d
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7yrlW5z9zdg2eBucB2GPqXKSMQfH9lSRSO4DbWF7AFc
+id: footer
+label: 'Pie de página'
+description: 'Enlaces de información del sitio'
+locked: true

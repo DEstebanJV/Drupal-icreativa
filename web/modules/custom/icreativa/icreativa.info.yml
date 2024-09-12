@@ -1,0 +1,5 @@
+name: Icreativa
+type: module
+description: Icreativa
+core_version_requirement: ^11 || ^10 || ^9
+package: Custom

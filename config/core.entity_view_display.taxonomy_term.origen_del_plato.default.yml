@@ -1,0 +1,22 @@
+uuid: 99683478-cb63-4510-aea7-3b1f8fa2c6a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.origen_del_plato
+  module:
+    - text
+id: taxonomy_term.origen_del_plato.default
+targetEntityType: taxonomy_term
+bundle: origen_del_plato
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,24 @@
+uuid: ec20c1c2-de38-4ff7-a76d-168f6e3dee19
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.banner.body
+field_name: body
+entity_type: block_content
+bundle: banner
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

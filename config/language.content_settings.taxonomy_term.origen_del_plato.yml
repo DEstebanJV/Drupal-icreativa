@@ -1,0 +1,11 @@
+uuid: 29bf56e4-29f2-40be-9dae-501a909f9f75
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.origen_del_plato
+id: taxonomy_term.origen_del_plato
+target_entity_type_id: taxonomy_term
+target_bundle: origen_del_plato
+default_langcode: site_default
+language_alterable: false

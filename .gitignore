@@ -1,4 +1,6 @@
 vendor/
 web/core/
 modules/contrib/
-sites/default/files/
+*/sites/default/files/
+
+!sites/default/settings.php
