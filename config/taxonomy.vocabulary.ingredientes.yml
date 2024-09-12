@@ -1,0 +1,9 @@
+uuid: 7312cadf-9cce-4074-a095-709c26d3b0eb
+langcode: es
+status: true
+dependencies: {  }
+name: Ingredientes
+vid: ingredientes
+description: 'lista de ingredientes posibles a usar'
+weight: 0
+new_revision: false
