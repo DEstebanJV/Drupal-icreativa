@@ -1,0 +1,22 @@
+uuid: d2edb8e4-7bf0-44b5-9762-3631e2c473aa
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ingredientes
+  module:
+    - text
+id: taxonomy_term.ingredientes.default
+targetEntityType: taxonomy_term
+bundle: ingredientes
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
