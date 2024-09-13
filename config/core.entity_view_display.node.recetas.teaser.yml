@@ -1,0 +1,41 @@
+uuid: 193c99ec-8027-41f3-8dbd-816774d0bcac
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.recetas.body
+    - field.field.node.recetas.field_chef
+    - field.field.node.recetas.field_imagen_del_plato
+    - field.field.node.recetas.field_ingredientes_del_plato
+    - field.field.node.recetas.field_origen_del_plato
+    - field.field.node.recetas.field_titulo_del_plato
+    - node.type.recetas
+  module:
+    - text
+    - user
+id: node.recetas.teaser
+targetEntityType: node
+bundle: recetas
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_chef: true
+  field_imagen_del_plato: true
+  field_ingredientes_del_plato: true
+  field_origen_del_plato: true
+  field_titulo_del_plato: true
+  langcode: true

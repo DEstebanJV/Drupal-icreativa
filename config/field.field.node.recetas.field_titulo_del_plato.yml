@@ -1,0 +1,19 @@
+uuid: c2087d52-05a4-480e-b126-850e4db2ceba
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo_del_plato
+    - node.type.recetas
+id: node.recetas.field_titulo_del_plato
+field_name: field_titulo_del_plato
+entity_type: node
+bundle: recetas
+label: 'Titulo del plato'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

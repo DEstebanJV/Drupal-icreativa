@@ -1,0 +1,24 @@
+uuid: 373de002-3182-49f7-b7c3-1ee01e68c729
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.recetas
+  module:
+    - text
+id: node.recetas.body
+field_name: body
+entity_type: node
+bundle: recetas
+label: Body
+description: 'Pasos a seguir de la receta'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

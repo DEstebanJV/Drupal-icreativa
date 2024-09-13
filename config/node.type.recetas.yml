@@ -1,0 +1,18 @@
+uuid: b6647aa7-5afc-48f9-803f-800d39a5e973
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Recetas
+type: recetas
+description: 'Recetas que el publico puede realizar'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

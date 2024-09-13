@@ -1,0 +1,37 @@
+uuid: 0ea9db4f-ab30-4aaa-b0c6-3c4250141ddb
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - node.type.recetas
+    - taxonomy.vocabulary.ingredientes
+    - taxonomy.vocabulary.origen_del_plato
+  module:
+    - field_ui
+    - file
+    - filter
+    - node
+    - path
+    - taxonomy
+    - toolbar
+id: chef
+label: Chef
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'administer display modes'
+  - 'administer taxonomy_term display'
+  - 'create recetas content'
+  - 'create terms in ingredientes'
+  - 'create terms in origen_del_plato'
+  - 'create url aliases'
+  - 'delete own recetas content'
+  - 'edit own recetas content'
+  - 'edit terms in ingredientes'
+  - 'edit terms in origen_del_plato'
+  - 'use text format basic_html'
+  - 'view own unpublished content'

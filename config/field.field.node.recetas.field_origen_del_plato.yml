@@ -1,0 +1,29 @@
+uuid: 7421620d-4573-4c0c-a730-436669021787
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_origen_del_plato
+    - node.type.recetas
+    - taxonomy.vocabulary.origen_del_plato
+id: node.recetas.field_origen_del_plato
+field_name: field_origen_del_plato
+entity_type: node
+bundle: recetas
+label: 'Origen del plato'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      origen_del_plato: origen_del_plato
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
