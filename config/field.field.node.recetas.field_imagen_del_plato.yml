@@ -1,12 +1,11 @@
-uuid: a31f353e-f5c1-494d-bd00-8734de52c381
+uuid: aa767bff-6096-4e42-a06a-719e7bbde457
 langcode: es
 status: true
 dependencies:
   config:
     - field.storage.node.field_imagen_del_plato
+    - media.type.image
     - node.type.recetas
-  module:
-    - image
 id: node.recetas.field_imagen_del_plato
 field_name: field_imagen_del_plato
 entity_type: node
@@ -18,21 +17,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:file'
-  handler_settings: {  }
-  file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg webp'
-  max_filesize: 20mb
-  max_resolution: ''
-  min_resolution: ''
-  alt_field: true
-  alt_field_required: true
-  title_field: false
-  title_field_required: false
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-field_type: image
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

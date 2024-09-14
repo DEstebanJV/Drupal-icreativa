@@ -1,0 +1,77 @@
+uuid: d648ff95-5329-4088-aac7-146fe4e8e9e8
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.recetas.body
+    - field.field.node.recetas.field_chef
+    - field.field.node.recetas.field_imagen_del_plato
+    - field.field.node.recetas.field_ingredientes_del_plato
+    - field.field.node.recetas.field_origen_del_plato
+    - node.type.recetas
+  module:
+    - field_layout
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.recetas.full
+targetEntityType: node
+bundle: recetas
+mode: full
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_chef:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_imagen_del_plato:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_ingredientes_del_plato:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_origen_del_plato:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

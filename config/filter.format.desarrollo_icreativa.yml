@@ -1,0 +1,24 @@
+uuid: 033a9df8-96eb-45f5-85bb-4fbe1b357ba0
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+  module:
+    - media
+name: 'Desarrollo Icreativa'
+format: desarrollo_icreativa
+weight: 0
+filters:
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: media_library
+      allowed_view_modes:
+        media_library: media_library
+      allowed_media_types:
+        document: document
+        image: image

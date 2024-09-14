@@ -1,0 +1,45 @@
+uuid: 3efbf92e-aea7-472f-ab8f-7e12ff663326
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.desarrollo_icreativa
+  module:
+    - ckeditor5
+format: desarrollo_icreativa
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - bold
+      - italic
+      - underline
+      - drupalMedia
+      - alignment
+      - bulletedList
+      - numberedList
+      - insertTable
+      - showBlocks
+  plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      properties:
+        reversed: true
+        startIndex: true
+      multiBlock: true
+    media_media:
+      allow_view_mode_override: false
+image_upload:
+  status: false

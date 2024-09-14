@@ -1,12 +1,14 @@
-uuid: 3e7e93fc-f3b2-48ba-a88c-ad37979d2a46
-langcode: es
+uuid: 676f29b9-72a0-4b6c-a548-09cb0b8d9019
+langcode: en
 status: true
 dependencies:
   module:
-    - node
-id: node.field_titulo_del_plato
-field_name: field_titulo_del_plato
-entity_type: node
+    - media
+_core:
+  default_config_hash: cNf_852Dq-fNnSaMI4LxL-J6N7bLkHuDbD9EUqOn4_U
+id: media.field_media_oembed_video
+field_name: field_media_oembed_video
+entity_type: media
 type: string
 settings:
   max_length: 255

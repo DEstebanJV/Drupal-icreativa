@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.desarrollo_icreativa
     - node.type.recetas
     - taxonomy.vocabulary.ingredientes
     - taxonomy.vocabulary.origen_del_plato
@@ -11,6 +12,7 @@ dependencies:
     - field_ui
     - file
     - filter
+    - layout_builder
     - node
     - path
     - taxonomy
@@ -25,6 +27,7 @@ permissions:
   - 'access toolbar'
   - 'administer display modes'
   - 'administer taxonomy_term display'
+  - 'create and edit custom blocks'
   - 'create recetas content'
   - 'create terms in ingredientes'
   - 'create terms in origen_del_plato'
@@ -34,4 +37,5 @@ permissions:
   - 'edit terms in ingredientes'
   - 'edit terms in origen_del_plato'
   - 'use text format basic_html'
+  - 'use text format desarrollo_icreativa'
   - 'view own unpublished content'

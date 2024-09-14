@@ -5,7 +5,39 @@ dependencies:
   config:
     - taxonomy.vocabulary.ingredientes
   module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          6b2611f3-688a-43ba-a48b-5dba68dd8d10:
+            uuid: 6b2611f3-688a-43ba-a48b-5dba68dd8d10
+            region: content
+            configuration:
+              id: 'field_block:taxonomy_term:ingredientes:description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: taxonomy_term.ingredientes.default
 targetEntityType: taxonomy_term
 bundle: ingredientes

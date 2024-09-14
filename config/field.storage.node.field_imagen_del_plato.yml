@@ -1,27 +1,17 @@
-uuid: 58891fda-eb2a-4842-9f7b-919f0512fede
+uuid: 7dcca3ec-e2ca-4f4d-b518-d367b22232dd
 langcode: es
 status: true
 dependencies:
   module:
-    - file
-    - image
+    - media
     - node
 id: node.field_imagen_del_plato
 field_name: field_imagen_del_plato
 entity_type: node
-type: image
+type: entity_reference
 settings:
-  target_type: file
-  display_field: false
-  display_default: false
-  uri_scheme: public
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-module: image
+  target_type: media
+module: core
 locked: false
 cardinality: 1
 translatable: true

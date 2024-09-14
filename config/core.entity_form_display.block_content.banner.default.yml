@@ -8,8 +8,15 @@ dependencies:
     - field.field.block_content.banner.field_fondo_imagen
     - image.style.thumbnail
   module:
+    - field_layout
     - image
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: block_content.banner.default
 targetEntityType: block_content
 bundle: banner
