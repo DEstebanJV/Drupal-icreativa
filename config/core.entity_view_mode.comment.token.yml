@@ -1,0 +1,11 @@
+uuid: 7cc577b3-47c1-4b12-99d4-fe627d9f475c
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+id: comment.token
+label: Comodín
+description: null
+targetEntityType: comment
+cache: true

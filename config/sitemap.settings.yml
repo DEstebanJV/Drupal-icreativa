@@ -1,0 +1,57 @@
+_core:
+  default_config_hash: GUKBlXIBQ2d0H8Q7M_Rqn1Q93tRxLPfs9cG-VeQC9NI
+langcode: es
+page_title: 'Mapa del sitio'
+path: /sitemap
+message:
+  value: ''
+  format: plain_text
+plugins:
+  frontpage:
+    base_plugin: frontpage
+    enabled: true
+    weight: 0
+    settings:
+      title: 'Página de Inicio'
+      rss: /rss.xml
+    id: frontpage
+    provider: sitemap
+  'vocabulary:ingredientes':
+    base_plugin: vocabulary
+    enabled: true
+    weight: 0
+    settings:
+      title: Ingredientes
+      show_description: false
+      show_count: false
+      display_unpublished: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+    id: 'vocabulary:ingredientes'
+    provider: sitemap
+  'vocabulary:origen_del_plato':
+    base_plugin: vocabulary
+    enabled: true
+    weight: 0
+    settings:
+      title: 'Origen del plato'
+      show_description: false
+      show_count: false
+      display_unpublished: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+    id: 'vocabulary:origen_del_plato'
+    provider: sitemap
+include_css: true

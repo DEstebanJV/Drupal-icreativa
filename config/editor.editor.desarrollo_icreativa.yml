@@ -21,6 +21,7 @@ settings:
       - numberedList
       - insertTable
       - showBlocks
+      - tokenBrowser
   plugins:
     ckeditor5_alignment:
       enabled_alignments:
@@ -41,5 +42,7 @@ settings:
       multiBlock: true
     media_media:
       allow_view_mode_override: false
+    token_filter_token_browser:
+      token_types: {  }
 image_upload:
   status: false
